@@ -1,0 +1,52 @@
+name: ita_seg_app
+description: Um app portal para ITA SEG
+publish_to: 'none' # Remove ao publicar em um repositório pub
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones padrão do iOS
+  cupertino_icons: ^1.0.2
+
+  # Para abrir URLs (WhatsApp, Instagram, Maps)
+  url_launcher: ^6.1.7
+
+  # Para intents Android (abrir outros apps instalados)
+  android_intent_plus: ^5.3.0
+
+  flutter_svg: ^1.1.6
+
+  device_apps: ^2.1.0
+
+dev_dependencies:
+  # Testes unitários do Flutter
+  flutter_test:
+    sdk: flutter
+
+  # Conjunto de lint recomendados pelo time Flutter
+  flutter_lints: ^2.0.0
+
+  flutter_launcher_icons: ^0.14.0
+
+flutter_icons:
+    android: true
+    ios: true
+    adaptive_icon_background: "#0A0301"
+    adaptive_icon_foreground: "assets/tec_house_logo.png"
+    image_path: "assets/tec_house_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/wpp.svg
+    - assets/insta.svg
+    - assets/location.svg
+    - assets/tec_house_logo.png
